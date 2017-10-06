@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.blankdev.znote.ui.fragment.create.CreateNoteFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/color200" />
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <EditText
+            android:id="@+id/etJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:hint="Title" />
+
+        <EditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:hint="Note" />
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/ic_add_black_24dp"
+                android:background="@drawable/btn_plus"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:text="Diedit 10.01"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/ic_more_horiz_black_24dp"
+                android:background="@drawable/btn_plus"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+    </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>

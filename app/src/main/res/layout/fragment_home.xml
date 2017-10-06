@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color200"
+    tools:context="com.blankdev.znote.ui.fragment.home.HomeFragment">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/rc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/putih"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/ivCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_camera_alt_black_24dp" />
+
+        <ImageView
+            android:paddingLeft="10dp"
+            android:id="@+id/ivMic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@id/ivCamera"
+            android:src="@drawable/ic_mic_black_24dp" />
+
+        <ImageView
+            android:paddingLeft="10dp"
+            android:id="@+id/ivPen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@id/ivMic"
+            android:src="@drawable/ic_create_black_24dp" />
+
+        <ImageView
+            android:paddingLeft="10dp"
+            android:id="@+id/ivList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@id/ivPen"
+            android:src="@drawable/ic_format_list_bulleted_black_24dp" />
+
+        <EditText
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ivList"
+            android:hint="Take a note ..." />
+    </RelativeLayout>
+</RelativeLayout>
